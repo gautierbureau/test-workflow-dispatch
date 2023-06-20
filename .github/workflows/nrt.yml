@@ -1,0 +1,19 @@
+name: NRT
+
+on:
+  workflow_dispatch:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  nrt:
+    runs-on: ubuntu-latest
+    env:
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v3
+
+      - name: Build
+        run: echo nrt
