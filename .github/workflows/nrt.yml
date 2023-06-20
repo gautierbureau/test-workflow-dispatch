@@ -10,7 +10,6 @@ defaults:
 jobs:
   nrt:
     runs-on: ubuntu-latest
-    env:
     steps:
       - name: Checkout sources
         uses: actions/checkout@v3
